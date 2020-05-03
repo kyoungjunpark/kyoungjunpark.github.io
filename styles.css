@@ -1,0 +1,11 @@
+#my-info{
+	height: 60vh;
+}
+.name {
+	text-transform: none;
+	
+}
+
+.subtitle {
+	line-height:1.5em;
+}
