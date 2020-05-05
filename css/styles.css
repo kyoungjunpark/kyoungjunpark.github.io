@@ -4023,6 +4023,14 @@ input[type=button].btn-block {
   align-items: center;
 }
 
+.nav-icon {
+  padding: 0.25rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
@@ -10134,7 +10142,7 @@ header.masthead .masthead-heading {
   }
   header.masthead .masthead-subheading {
     font-size: 1.2rem;
-    line-height: 1.7rem;
+    line-height: 1.9rem;
 		text-align: center;
   }
   header.masthead .masthead-heading {
