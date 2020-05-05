@@ -160,7 +160,7 @@ sup {
 }
 
 a {
-  color: #fed136;
+  color: blue;
   text-decoration: none;
   background-color: transparent;
 }
@@ -2446,7 +2446,7 @@ textarea.form-control {
 }
 .btn:focus, .btn.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(254, 209, 54, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(189, 189, 189, 0.25);
 }
 .btn.disabled, .btn:disabled {
   opacity: 0.65;
@@ -2458,19 +2458,19 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #808080;
+  border-color: #808080;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #fec810;
-  border-color: #fec503;
+  background-color: #808080;
+  border-color: #808080;
 }
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #fec810;
-  border-color: #fec503;
-  box-shadow: 0 0 0 0.2rem rgba(254, 216, 84, 0.5);
+  background-color: #808080;
+  border-color: #808080;
+  box-shadow: 0 0 0 0.2rem rgba(189, 189, 189, 0.5);
 }
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
@@ -3008,7 +3008,7 @@ input[type=button].btn-block {
   color: #212529;
   text-align: left;
   list-style: none;
-  background-color: rgba(189, 189, 189, 0.7);
+  background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
@@ -6199,7 +6199,7 @@ button.bg-dark:focus {
 }
 
 .border-primary {
-  border-color: #fed136 !important;
+  border-color: #808080 !important;
 }
 
 .border-secondary {
@@ -6215,7 +6215,7 @@ button.bg-dark:focus {
 }
 
 .border-warning {
-  border-color: #fed136 !important;
+  border-color: #808080 !important;
 }
 
 .border-danger {
@@ -9752,7 +9752,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #fed136 !important;
+  color: #808080 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -9784,7 +9784,7 @@ a.text-info:hover, a.text-info:focus {
 }
 
 .text-warning {
-  color: #fed136 !important;
+  color: #808080 !important;
 }
 
 a.text-warning:hover, a.text-warning:focus {
@@ -9984,12 +9984,12 @@ p {
   }
 }
 ::-moz-selection {
-  background: #fed136;
+  background: #808080;
   text-shadow: none;
 }
 
 ::selection {
-  background: #fed136;
+  background: #808080;
   text-shadow: none;
 }
 
@@ -10054,6 +10054,7 @@ img::-moz-selection {
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: rgba(25, 25, 112, 0.7);
+  font-weight: 900;
 }
 
 @media (min-width: 992px) {
@@ -10103,21 +10104,21 @@ header.masthead {
 	background-color: #eeeeee;
 }
 header.masthead .masthead-subsubheading {
-  font-size: 0.9rem;
-  line-height: 1.3rem;
-	text-align: center;
+  font-size: 0.6rem;
+  line-height: 1rem;
+	text-align: justify;
 }
 header.masthead .masthead-subheading {
-  font-size: 1.5rem;
+  font-size: 0.9rem;
   font-style: italic;
-  line-height: 1.5rem;
+  line-height: 1rem;
 	text-align: center;
   font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 header.masthead .masthead-heading {
-  font-size: 2.25rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  line-height: 2.25rem;
+  line-height: 1rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -10125,6 +10126,11 @@ header.masthead .masthead-heading {
   header.masthead {
     padding-top: 5rem;
     padding-bottom: 2rem;
+  }
+  header.masthead .masthead-subsubheading {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
   }
   header.masthead .masthead-subheading {
     font-size: 1.2rem;
@@ -10279,7 +10285,7 @@ header.masthead .masthead-heading {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #fed136;
+  background-color: #808080;
 }
 .timeline > li .timeline-image h4 {
   font-size: 10px;
@@ -10433,7 +10439,7 @@ section#contact form#contactForm p.help-block {
   margin: 0;
 }
 section#contact form#contactForm .form-control:focus {
-  border-color: #fed136;
+  border-color: #808080;
   box-shadow: none;
 }
 section#contact form#contactForm ::-webkit-input-placeholder {
@@ -10468,7 +10474,10 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 .name {
 	text-transform: none;
+}
 
+.profile {
+  margin: auto;
 }
 
 .subtitle {
