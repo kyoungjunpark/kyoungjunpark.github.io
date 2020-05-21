@@ -1,0 +1,9 @@
+# Site settings
+title: 'Personal Page'
+description: 'Personal Page'
+url: 'https://kyoungjunpark.github.io/'
+google_analytics: 'UA-167280609-1'
+
+author:
+  name: 'kyoungjun'
+  email: parkkjun525@gmail.com
