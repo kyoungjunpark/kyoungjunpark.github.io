@@ -10638,5 +10638,20 @@ li.teaching {
   li.teaching {
     font-size: 1.3em;
   }
+  .videoContainer
+  {
+    margin-top: 3em;
+  }
+  .videoContainer video
+  {
+    width: 80%    !important;
+    height: auto   !important;
+  }
 
+  .imageResource
+  {
+    width: 90%    !important;
+    height: auto   !important;
+      margin: auto;
+  }
 }
