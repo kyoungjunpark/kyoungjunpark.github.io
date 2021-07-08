@@ -48,7 +48,7 @@
         <ul class="navbar-nav text-uppercase ml-auto">
           <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#info">info</a></li> -->
           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">interests</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">publications</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Research">research</a></li>
           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">education</a></li>
           <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#honors">honors</a></li> -->
           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#teaching">teaching</a></li>
@@ -65,7 +65,7 @@
           <h3 class="masthead-subheading text-muted">
             <p style="color:black"> kyoungjun_park@tmax.co.kr
               <br>
-              Research Engineer at <a href="https://www.tmaxdata.com/"> TmaxData </a>
+              Research Engineer at <a href="https://www.tmaxsoft.com/" target="_blank"> TmaxSoft </a>
 
             </p>
           </h3>
@@ -76,8 +76,8 @@
         </h6>
       -->
       <h4 class="masthead-subsubheading">
-        <a href="./assets/document/CV.pdf"> <button class="nav-icon" type="button"><i class="far fa-file-pdf"></i> Curriculum Vitae (CV) </button></a>
-        <a href="https://scholar.google.com/citations?user=pVghcBUAAAAJ&hl=en"> <button class="nav-icon" type="button"><i class="fas fa-graduation-cap"></i> Google Scholar </button></a>
+        <a href="./assets/document/CV.pdf" target="_blank"> <button class="nav-icon" type="button"><i class="far fa-file-pdf"></i> Curriculum Vitae (CV) </button></a>
+        <a href="https://scholar.google.com/citations?user=pVghcBUAAAAJ&hl=en" target="_blank"> <button class="nav-icon" type="button"><i class="fas fa-graduation-cap"></i> Google Scholar </button></a>
         <!--<a href="https://github.com/KyoungjunPark"> <button class="nav-icon" type="button"><i class="fab fa-github-alt"></i> GitHub </button></a> -->
       </h4>
     </div>
@@ -116,11 +116,10 @@
         <h3 class="section-heading"><i class="fa fa-eye" aria-hidden="true"></i> INTERESTS</h3>
         <ul class="interests">
           <li class="details">
-            Kyoungjun Park received the M.S. degree at the <a href="https://cs.kaist.ac.kr/"> School of Computing </a>, <a href="http://www.kaist.ac.kr/">KAIST </a> in 2019.
+            I received the M.S. degree at the <a href="https://cs.kaist.ac.kr/" target="_blank"> School of Computing </a>, <a href="http://www.kaist.ac.kr/">KAIST </a>
+            in 2019 with an outstanding thesis award. I am currently working at TmaxSoft as an alternative military service. <br> My research interests include: <br>
           </li>
-          <li class="details">
-            His research interests include: <br>
-          </li>
+
           <li class="interests"> Mobile & Ubiquitous Systems, Machine Learning, Reinforcement Learning, and Human Computer Interaction.
           </li>
         </div>
@@ -128,36 +127,47 @@
     </div>
   </section>
 
-  <!-- Publications -->
-  <section class="page-section" id="publications">
+  <!-- Research -->
+  <section class="page-section" id="research">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <h3 class="section-heading"><i class="fa fa-book" aria-hidden="true"></i> PUBLICATIONS</h3>
-          <ul class="publications">
-            <li class="publications">EVSO: Environment-aware Video Streaming Optimization of Power Consumption</li>
-            <li class="details"> <span class="font-weight-bolder"> Kyoungjun Park </span>, Myungchul Kim </li>
-            <li class="details"> IEEE International Conference on Computer Communications (INFOCOM) 2019
-              <br> (acceptance ratio = 19.7%, 288/1464)</li>
+          <h3 class="section-heading"><i class="fa fa-book" aria-hidden="true"></i> RESEARCH</h3>
+          <ul class="research">
+            <li class="research">Adaptive Frame Rate Streaming for Mobile Devices </li>
+
+            <li class="details">NeuSaver: Neural Adaptive Power Consumption Optimization for Mobile Video Streaming <br>
+            <span class="font-weight-bolder"> Kyoungjun Park </span>, Myungchul Kim, Laihyuk Park <br>
+            IEEE Transactions on Communications (TCOM) 2021 (Under Review) <br>
+            <a href="https://ieeexplore.ieee.org/abstract/document/8737392/" target="_blank">[paper] </a>
+            <div class="imageResource">
+              <img id="image" src="./assets/document/NeuSaver_architecture.jpg" width=70%>
+              <img id="image" src="./assets/document/NeuSaver_RL.jpg" width=40%>
+            </div>
+            <li class="details">EVSO: Environment-aware Video Streaming Optimization of Power Consumption <br>
+            <span class="font-weight-bolder"> Kyoungjun Park </span>, Myungchul Kim <br>
+            <a href="https://infocom2019.ieee-infocom.org/" target="_blank">IEEE INFOCOM 2019 </a> (acceptance ratio = 19.7%, 288/1464) <br>
+            <a href="https://ieeexplore.ieee.org/abstract/document/8737392/" target="_blank">[paper] </a>
+            <a href="./assets/document/infocom_presentation.pdf" target="_blank">[slides] </a> </li>
               <div class="imageResource">
-                <img id="image" src="./assets/document/evso.jpg">
+                <img id="image" src="./assets/document/evso.jpg" width=80%>
               </div>
-              <br>
-              <li class="details"> Comparison between Maintained Video Quality (VMAF), Saved Energy:
-                <br> EVSO: <span class="font-weight-bolder"> 99.27%, 14.03% </span>  | EVSO++: <span class="font-weight-bolder"> 95.63%, 15.59%  </span> |  2/3FPS: <span class="font-weight-bolder" style="color:red"> 85.57% </span>, 23.08% </li>
               <div class="videoContainer">
                 <video id="video" controls>
                   <source src="./assets/video/pyeongchang.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
                 </div>
-                <li class="details"> <a href="https://cs.kaist.ac.kr/board/view?bbs_id=news&bbs_sn=8761&menu=80"> KAIST CS News </a> </li>
-                <li class="publications"> -- </li>
-                <li class="publications">Energy-efficient mobile charging for wireless power transfer in Internet of Things networks</li>
-                <li class="details"> Woongsoo Na, Junho Park, Cheol Lee, <span class="font-weight-bolder"> Kyoungjun Park </span>, Joongheon Kim, Sungrae Cho </li>
-                <li class="details"> IEEE Internet of Things journal 2017 </li>
+                <li class="details"> <a href="https://cs.kaist.Mac.kr/board/view?bbs_id=news&bbs_sn=8761&menu=80" target="_blank"> KAIST CS News </a> </li>
+                <li class="research"> -- </li>
+                <li class="research"> Mobile Charging Methodologies for Decentralized IoT Devices </li>
+                <li class="details">Energy-efficient mobile charging for wireless power transfer in Internet of Things networks <br>
+                Woongsoo Na, Junho Park, Cheol Lee, <span class="font-weight-bolder"> Kyoungjun Park </span>, Joongheon Kim, Sungrae Cho <br>
+              <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488907" target="_blank"> IEEE Internet of Things journal </a> 2017 <br>
+                          <a href="https://ieeexplore.ieee.org/abstract/document/8103748/" target="_blank">[paper] </a> </li>
                 <div class="imageResource">
-                  <img id="image" src="./assets/img/simulator.jpg">
+                  <img id="image" src="./assets/img/IoT_architecture.png" width=40%>
+                  <img id="image" src="./assets/img/simulator.jpg" width=50%>
                 </div>
               </ul>
               <!-- Conference Papers
@@ -175,7 +185,7 @@
           <div class="col-sm-12">
             <h3 class="section-heading"><i class="fa fa-graduation-cap" aria-hidden="true"></i> EDUCATION</h3>
             <ul>
-              <li class="education">M.S., Feb. 2019, School of Computing, KAIST</li>
+              <li class="education">M.S., Feb. 2019, School of Computing, KAIST (Outstanding Thesis Award)</li>
               <li class="education">B.S., Feb. 2017, School of Computer Science and Engineering, Chung-Ang University (Summa Cum Laude)</li>
             </ul>
           </div>

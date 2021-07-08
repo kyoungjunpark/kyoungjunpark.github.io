@@ -163,6 +163,7 @@ a {
   color: blue;
   text-decoration: none;
   background-color: transparent;
+  target: _blank;
 }
 a:hover {
   color: #e6b301;
@@ -10569,12 +10570,12 @@ ul.interests {
     text-align: center;
     margin: 1em;
 }
-ul.publications {
+ul.research {
   list-style-type: none;
   text-align: center;
   margin: 0.2em;
 }
-li.publications {
+li.research {
   font-size: 0.5em;
   font-style: bold;
 }
@@ -10613,12 +10614,12 @@ li.teaching {
       text-align: center;
       margin: 1.5em;
   }
-  ul.publications {
+  ul.research {
     list-style-type: none;
     text-align: center;
     margin: 0.5em;
   }
-  li.publications {
+  li.research {
     font-size: 1.7em;
     font-style: bold;
     margin: 1.2em;
@@ -10652,14 +10653,14 @@ li.teaching {
   }
   .videoContainer video
   {
-    width: 90%    !important;
+    width: 70%    !important;
     height: auto   !important;
   }
 
   .imageResource
   {
-    width: 90%    !important;
+    width: 100%    !important;
     height: auto   !important;
-      margin: auto;
+    margin: auto;
   }
 }
