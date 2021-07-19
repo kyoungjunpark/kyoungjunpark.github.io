@@ -10563,7 +10563,9 @@ img {
       }
     }
   }
-
+ul {
+  padding: 0px;
+}
 ul.interests {
     list-style-type: none;
     text-align: center;
