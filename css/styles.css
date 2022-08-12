@@ -10580,6 +10580,15 @@ li.research {
   font-size: 0.5em;
   font-style: bold;
 }
+ul.internship {
+  list-style-type: none;
+  text-align: center;
+  margin: 0.1em;
+}
+li.internship {
+  font-size: 0.5em;
+  font-style: bold;
+}
 li.interests {
   font-size: 0.5em;
   font-style: bold;
@@ -10626,6 +10635,18 @@ li.teaching {
     margin: 1.2em;
     margin-top: 1em;
   }
+  ul.internship {
+    list-style-type: none;
+    text-align: center;
+    margin: 0.5em;
+  }
+  li.internship {
+    font-size: 1.7em;
+    font-style: bold;
+    margin: 0.5em;
+    margin-top: 0.5em;
+  }
+
   li.interests {
     font-size: 1.5em;
     font-style: bold;
