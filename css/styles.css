@@ -10598,6 +10598,9 @@ li.interests {
 li.details {
   font-size: 0.5em;
 }
+span.sub_details {
+  font-size: 0.3em;
+}
 ul.education {
   list-style-type: none;
   text-align: center;
@@ -10657,6 +10660,10 @@ li.teaching {
   li.details {
     font-size: 1.3em;
       margin: 0.5em;
+  }
+  span.sub_details{
+    font-size: 0.7em;
+      margin: 0.1em;
   }
   ul.education {
     list-style-type: none;
