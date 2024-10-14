@@ -10580,6 +10580,15 @@ li.research {
   font-size: 0.5em;
   font-style: bold;
 }
+ul.projects {
+  list-style-type: none;
+  text-align: center;
+  margin: 0.2em;
+}
+li.projects {
+  font-size: 0.5em;
+  font-style: bold;
+}
 ul.internship {
   list-style-type: none;
   text-align: center;
@@ -10638,6 +10647,17 @@ li.teaching {
     margin: 1.2em;
     margin-top: 1em;
   }
+    ul.projects {
+    list-style-type: none;
+    text-align: center;
+    margin: 0.5em;
+  }
+  li.projects {
+    font-size: 1.7em;
+    font-style: bold;
+    margin: 1.2em;
+    margin-top: 1em;
+  }
   ul.internship {
     list-style-type: none;
     text-align: center;
@@ -10691,5 +10711,23 @@ li.teaching {
     width: 100%    !important;
     height: auto   !important;
     margin: auto;
+  }
+  .topic-table, .research-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px; /* Space between the two tables */
+    text-align: center;
+  }
+  .topic-table th, .research-table th, .topic-table td, .research-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  .topic-table th, .research-table th {
+    font-weight: bold;
+    background-color: #f2f2f2;
+  }
+  .research-table img {
+    width: 150px;  /* Fixed width for images */
+    height: auto;  /* Maintain aspect ratio */
   }
 }

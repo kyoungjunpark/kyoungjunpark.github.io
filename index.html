@@ -122,7 +122,7 @@
             My research interests include: <br>
           </li>
 
-          <li class="interests"> Mobile & Ubiquitous Computing, Multimedia, Reinforcement Learning, Generative AI, and Next-generation Networking.
+          <li class="interests"> Mobile & Ubiquitous Computing, Image/Video Diffusion, Multimedia, Reinforcement Learning, and Next-generation Networking.
           </li>
         </div>
       </div>
@@ -135,45 +135,113 @@
       <div class="row">
         <div class="col-sm-12">
           <h3 class="section-heading"><i class="fa fa-book" aria-hidden="true"></i> RESEARCH</h3>
-          <ul class="research">
+          <!-- Topic and Description Table -->
+<table class="topic-table">
+  <tr>
+    <th>Ongoing Project</th>
+    <th>Description</th>
+    <th>Technical Keywords</th>
 
-            <li class="research font-weight-bolder">Adaptive Frame Rate Streaming for Mobile Devices </li>
+  </tr>
+  <tr>
+    <td>World Models with Signals</td>
+    <td>Generating the world models combining with various signals such as  Wi-Fi and Lidar.</td>
+    <td>Stable Video Diffusion, Signal Embedding (e.g., Wi-Fi, Lidar)</td>
 
-            <li class="details">NeuSaver: Neural Adaptive Power Consumption Optimization for Mobile Video Streaming <br>
-              <span class="font-weight-bolder">Kyoungjun Park</span>, Myungchul Kim, Laihyuk Park <br>
-              <a href="https://www.computer.org/csdl/journal/tm" target="_blank">IEEE Transactions on Mobile Computing (TMC) 2022</a> <span style="color:red"> </span> <br>
-              <a href="https://ieeexplore.ieee.org/abstract/document/9847405/" target="_blank">[paper] </a>
-              <div class="imageResource">
-                <img id="image" src="./assets/document/NeuSaver_architecture.jpg" width=55%>
-                <img id="image" src="./assets/document/NeuSaver_RL.jpg" width=40%>
-              </div>
-              <li class="details">EVSO: Environment-aware Video Streaming Optimization of Power Consumption <br>
-                <span class="font-weight-bolder">Kyoungjun Park</span>, Myungchul Kim <br>
-                <a href="https://infocom2019.ieee-infocom.org/" target="_blank">IEEE INFOCOM 2019 </a> (acceptance ratio = 19.7%, 288/1464) <br>
-                <a href="https://ieeexplore.ieee.org/abstract/document/8737392/" target="_blank">[paper] </a>
-                <a href="./assets/document/infocom_presentation.pdf" target="_blank">[slides] </a> </li>
-                <div class="imageResource">
-                  <img id="image" src="./assets/document/evso.jpg" width=80%>
-                </div>
-                <div class="videoContainer">
-                  <video id="video" controls>
-                    <source src="./assets/video/pyeongchang.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                  <li class="details"> <a href="https://cs.kaist.ac.kr/board/view?bbs_id=news&bbs_sn=8761&menu=80" target="_blank"> KAIST CS News </a> </li>
-                  <li class="research"> -- </li>
+  </tr>
+  <tr>
+    <td>RF Signal Generation using Image Diffusion</td>
+    <td>Generating the RSSI prediction heatmap using stable diffusion.</td>
+    <td>Image Diffusion, Diffusion w/ Conditioning, RF Embedding</td>
 
-                  <li class="research font-weight-bolder"> Mobile Charging Methodologies for Decentralized IoT Devices </li>
-                  <li class="details">Energy-efficient mobile charging for wireless power transfer in Internet of Things networks <br>
-                    Woongsoo Na, Junho Park, Cheol Lee, <span class="font-weight-bolder">Kyoungjun Park</span>, Joongheon Kim, Sungrae Cho <br>
-                    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488907" target="_blank"> IEEE Internet of Things journal </a> 2017 <br>
-                    <a href="https://ieeexplore.ieee.org/abstract/document/8103748/" target="_blank">[paper] </a> </li>
-                    <div class="imageResource">
-                      <img id="image" src="./assets/img/IoT_architecture.png" width=40%>
-                      <img id="image" src="./assets/img/simulator.jpg" width=50%>
-                    </div>
-                  </ul>
+  </tr>
+  <tr>
+    <td>Joint Handoff Optimization in LEO Satellites</td>
+    <td>Optimizing the video streaming using RL. It applies centralized training and distributed inference in RL design.</td>
+    <td>RL, PPO, A3C, Starlink, MPC</td>
+  </tr>
+</table>
+<table class="research-table">
+  <tr>
+    <th>Title</th>
+    <th>Authors</th>
+    <th>Publication</th>
+    <th>Links</th>
+    <th>Others <br> (Click to view)</th>
+  </tr>
+    <!-- Entry 3 -->
+  <tr>
+    <td class="font-weight-bolder">Real-Time Neural Video Recovery and Enhancement on Mobile Devices</td>
+    <td>Zhaoyuan He, Yifan Yang, Lili Qiu, <span class="font-weight-bolder">Kyoungjun Park</span>, Yuqing Yang</td>
+    <td>
+      <a href="https://conferences.sigcomm.org/co-next/2024/#!/home" target="_blank">ACM CoNEXT 2024</a>
+    </td>
+    <td>
+      <a href="https://dl.acm.org/doi/10.1145/3649472" target="_blank">[paper]</a>
+    </td>
+    <td>
+      <!--<img src="./assets/img/IoT_architecture.png" width="40%"> -->
+            <a href="./assets/img/conext24.png" target="_blank">
+        <img src="./assets/img/conext24.png" alt="Design" width=200px>
+      </a>
+    </td>
+  </tr>
+  <!-- Entry 1 -->
+  <tr>
+    <td class="font-weight-bolder">NeuSaver: Neural Adaptive Power Consumption Optimization for Mobile Video Streaming
+</td>
+    <td><span class="font-weight-bolder">Kyoungjun Park</span>, Myungchul Kim, Laihyuk Park</td>
+    <td>
+      <a href="https://www.computer.org/csdl/journal/tm" target="_blank">IEEE TMC 2022</a>
+    </td>
+    <td>
+      <a href="https://ieeexplore.ieee.org/abstract/document/9847405/" target="_blank">[paper]</a>
+    </td>
+    <td>
+      <!-- <img src="./assets/document/NeuSaver_architecture.jpg" width="55%"> -->
+           <a href="./assets/document/NeuSaver_RL.jpg" target="_blank">
+        <img src="./assets/document/NeuSaver_RL.jpg" alt="NeuSaver RL" width=200px>
+      </a>
+    </td>
+  </tr>
+
+  <!-- Entry 2 -->
+  <tr>
+    <td class="font-weight-bolder">EVSO: Environment-aware Video Streaming Optimization of Power Consumption</td>
+    <td><span class="font-weight-bolder">Kyoungjun Park</span>, Myungchul Kim</td>
+    <td>
+      <a href="https://infocom2019.ieee-infocom.org/" target="_blank">IEEE INFOCOM 2019</a> <br> (acceptance ratio: 19.7%)
+    </td>
+    <td>
+      <a href="https://ieeexplore.ieee.org/abstract/document/8737392/" target="_blank">[paper]</a><br>
+      <a href="./assets/document/infocom_presentation.pdf" target="_blank">[slides]</a>
+      <a href="https://cs.kaist.ac.kr/board/view?bbs_id=news&bbs_sn=8761&menu=80" target="_blank">KAIST CS News</a>
+    </td>
+    <td>
+      <a href="./assets/document/evso.jpg" target="_blank">
+        <img src="./assets/document/evso.jpg" alt="EVSO"  width=200px>
+      </a>
+    </td>
+  </tr>
+  <!-- Entry 3 -->
+  <tr>
+    <td class="font-weight-bolder">Mobile Charging Methodologies for Decentralized IoT Devices</td>
+    <td><span class="font-weight-bolder">Kyoungjun Park</span>, Woongsoo Na, Junho Park, Cheol Lee, Joongheon Kim, Sungrae Cho</td>
+    <td>
+      <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488907" target="_blank">IEEE IoT Journal 2017</a>
+    </td>
+    <td>
+      <a href="https://ieeexplore.ieee.org/abstract/document/8103748/" target="_blank">[paper]</a>
+    </td>
+    <td>
+      <!--<img src="./assets/img/IoT_architecture.png" width="40%"> -->
+            <a href="./assets/img/simulator.jpg" target="_blank">
+        <img src="./assets/img/simulator.jpg" alt="Simulator" width=200px>
+      </a>
+    </td>
+  </tr>
+
+</table>
                   <!-- Conference Papers
                   <h3 class="section-heading"><i class="fa fa-graduation-cap"></i>EDUCATION</h3>
                 -->
@@ -224,7 +292,7 @@
                     <img id="image" src="./assets/img/ms_logo.png" width=20%>
                   </div>
                   <li class="details">Researched Video Streaming in Low Earth Orbit<br> </li>
-                  <li class="details">w/ Cheng Luo, Zhiyuan He <br> </li>
+                  <li class="details">w/ Lili Qiu, Cheng Luo, Zhiyuan He <br> </li>
                   <li class="details">Summer 2022<br> </li>
                 </div>
 
