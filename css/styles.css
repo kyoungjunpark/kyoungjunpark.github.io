@@ -10727,7 +10727,7 @@ li.teaching {
     background-color: #f2f2f2;
   }
   .research-table img {
-    width: 150px;  /* Fixed width for images */
+    width: 200px;  /* Fixed width for images */
     height: auto;  /* Maintain aspect ratio */
   }
 }

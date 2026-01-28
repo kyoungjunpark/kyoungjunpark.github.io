@@ -129,142 +129,112 @@
     </div>
   </section>
 
-  <!-- Research -->
-  <section class="page-section" id="research">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <h3 class="section-heading"><i class="fa fa-book" aria-hidden="true"></i> RESEARCH</h3>
-          <!-- Topic and Description Table -->
-<table class="topic-table">
-  <tr>
-    <th>Ongoing Project</th>
-    <th>Description</th>
-    <th>Authors</th>
-    <th>Status & Links</th>
+<section class="page-section" id="research">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h3 class="section-heading"><i class="fa fa-book" aria-hidden="true"></i> RESEARCH</h3>
+        
+        <div class="research-summary mb-5">
+          <p style="font-size: 1.1rem; line-height: 1.6;">
+ My research focuses on <strong>multimodal machine learning and video systems</strong> 
+  and <strong>efficient mobile and streaming system design</strong>. Representative topics:
+          </p>
+          <ul style="list-style-type: square; margin-left: 20px;">
+  <li>
+    <strong>Multimodal diffusion models with visual and physical signals</strong>
+    (Two papers in submission)
+  </li>
+  <li>
+    <strong>AI-generated video detection and reasoning-based MLLMs</strong>
+    (ICLR '26)
+  </li>
+<li>
+  <strong>Video streaming in LEO satellite networks</strong>
+  (INFOCOM '26)
+</li>
+<li>
+  <strong>Resource-efficient mobile and adaptive video systems</strong>
+  (CoNEXT '24, TMC '22, INFOCOM '19)
+</li>
+          </ul>
+        </div>
 
-    <th>Technical Keywords</th>
+        <table class="research-table">
+          <tr>
+            <th>Title</th>
+            <th>Authors</th>
+            <th>Publication</th>
+            <th>Links</th>
+            <th>Description / Others</th>
+          </tr>
+          <tr>
+            <td class="font-weight-bolder">World Models with Signals</td>
+            <td><span class="font-weight-bolder">Kyoungjun Park</span>, Shicheng Zheng, Yifan Yang, Lili Qiu, Junbo Li, Xinyi Fu, Xiaomeng Li</td>
+            <td>In Submission!</td>
+            <td><a href="https://beyondvision-project.github.io/" target="_blank">[project]</a></td>
+            <td>Combining video diffusion with Wi-Fi and Lidar signal embeddings.</td>
+          </tr>
 
-  <tr>
-    <td>Real/Fake Video Discriminator</td>
-    <td>MLLM-based detector for AI-generated videos that combines chain-of-thought reasoning and reinforcement learning with specialized rewards for temporal and quality-based artifacts.</td>
-    <td><span class="font-weight-bolder">Kyoungjun Park</span>, Yifan Yang, Juheon Yi, Shicheng Zheng, Muhammad Muaz, Yifei Shen, Dongqi Han, Caihua Shan, Lili Qiu</td>
-    <td>Submitted to AAAI 2026 <br></td>
-    <td>MLLM, Video Authenticity Detection, GRPO, Temporal Artifact Reward, Diffusion Quality Reward</td>
-  </tr>
+          <tr>
+            <td class="font-weight-bolder">RF Signal Generation using Image Diffusion</td>
+            <td><span class="font-weight-bolder">Kyoungjun Park</span>, Yifan Yang, Changhan Ge, Lili Qiu, Shiqi Jiang</td>
+            <td>In Submission!</td>
+            <td><a href="https://rfvision-project.github.io/" target="_blank">[project]</a></td>
+            <td>Generating RSSI prediction heatmaps using stable diffusion with RF conditioning.</td>
+          </tr>
 
-  <tr>
-    <td>World Models with Signals</td>
-    <td>Generating the world models combining with various signals such as  Wi-Fi and Lidar.</td>
-    <td><span class="font-weight-bolder">Kyoungjun Park</span>, Shicheng Zheng, Yifan Yang, Lili Qiu, Junbo Li, Xinyi Fu, Xiaomeng Li</td>
-    <td>Submitted to NeurIPS 2025 <br><a href="https://beyondvision-project.github.io/" target="_blank">[project page]</a></td>
-    <td>Stable Video Diffusion, Signal Embedding (e.g., Wi-Fi, Lidar, Radar)</td>
-  </tr>
-  <tr>
-    <td>RF Signal Generation using Image Diffusion</td>
-    <td>Generating the RSSI prediction heatmap using stable diffusion.</td>
-    <td><span class="font-weight-bolder">Kyoungjun Park</span>, Yifan Yang, Changhan Ge, Lili Qiu, Shiqi Jiang</td>
-    <td>Submitted to NeurIPS 2025 <br><a href="https://rfvision-project.github.io/" target="_blank">[project page]</a></td>
-    <td>Image Diffusion, Diffusion w/ Conditioning, RF Embedding</td>
+          <tr>
+            <td class="font-weight-bolder">VidGuard-R1: AI-Generated Video Detection and Explanation via Reasoning MLLMs and RL</td>
+            <td><span class="font-weight-bolder">Kyoungjun Park</span>, Yifan Yang, Juheon Yi, Shicheng Zheng, Muhammad Muaz, Yifei Shen, Dongqi Han, Caihua Shan, Lili Qiu</td>
+            <td>ICLR 2026</td>
+            <td><a href="https://arxiv.org/pdf/2510.02282" target="_blank">[paper]</a></td>
+            <td>MLLM-based detector combining chain-of-thought reasoning and reinforcement learning (GRPO).</td>
+          </tr>
 
-  </tr>
-  <tr>
-    <td>Joint Handoff Optimization in LEO Satellites</td>
-    <td>Optimizing the video streaming using RL. It applies centralized training and distributed inference in RL design.</td>
-    <td><span class="font-weight-bolder">Kyoungjun Park</span>, Zhiyuan He, Cheng Luo, Yi Xu, Lili Qiu, Changhan Ge, Muhammad Muaz, Yuqing Yang</td>
-    <td>Submitted to INFOCOM 2026</td>
-    <td>RL, PPO, A3C, Starlink, MPC</td>
-  </tr>
-</table>
-<table class="research-table">
-  <tr>
-    <th>Title</th>
-    <th>Authors</th>
-    <th>Publication</th>
-    <th>Links</th>
-    <th>Others <br> (Click to view)</th>
-  </tr>
-    <!-- Entry 3 -->
-  <tr>
-    <td class="font-weight-bolder">Real-Time Neural Video Recovery and Enhancement on Mobile Devices</td>
-    <td>Zhaoyuan He, Yifan Yang, Lili Qiu, <span class="font-weight-bolder">Kyoungjun Park</span>, Yuqing Yang</td>
-    <td>
-      <a href="https://conferences.sigcomm.org/co-next/2024/#!/home" target="_blank">ACM CoNEXT 2024</a>
-    </td>
-    <td>
-      <a href="https://dl.acm.org/doi/10.1145/3649472" target="_blank">[paper]</a>
-    </td>
-    <td>
-      <!--<img src="./assets/img/IoT_architecture.png" width="40%"> -->
-            <a href="./assets/img/conext24.png" target="_blank">
-        <img src="./assets/img/conext24.png" alt="Design" width=200px>
-      </a>
-    </td>
-  </tr>
-  <!-- Entry 1 -->
-  <tr>
-    <td class="font-weight-bolder">NeuSaver: Neural Adaptive Power Consumption Optimization for Mobile Video Streaming
-</td>
-    <td><span class="font-weight-bolder">Kyoungjun Park</span>, Myungchul Kim, Laihyuk Park</td>
-    <td>
-      <a href="https://www.computer.org/csdl/journal/tm" target="_blank">IEEE TMC 2022</a>
-    </td>
-    <td>
-      <a href="https://ieeexplore.ieee.org/abstract/document/9847405/" target="_blank">[paper]</a>
-    </td>
-    <td>
-      <!-- <img src="./assets/document/NeuSaver_architecture.jpg" width="55%"> -->
-           <a href="./assets/document/NeuSaver_RL.jpg" target="_blank">
-        <img src="./assets/document/NeuSaver_RL.jpg" alt="NeuSaver RL" width=200px>
-      </a>
-    </td>
-  </tr>
+          <tr>
+            <td class="font-weight-bolder">Joint Optimization of Handoff and Video Rate in LEO Satellite Networks</td>
+            <td><span class="font-weight-bolder">Kyoungjun Park</span>, Zhiyuan He, Cheng Luo, Yi Xu, Lili Qiu, Changhan Ge, Muhammad Muaz</td>
+            <td>IEEE INFOCOM 2026</td>
+            <td><a href="https://arxiv.org/pdf/2504.04586" target="_blank">[paper]</a></td>
+            <td>RL-based optimization for satellite video streaming with centralized training and distributed inference.</td>
+          </tr>
+          <tr>
+            <td class="font-weight-bolder">Real-Time Neural Video Recovery and Enhancement on Mobile Devices</td>
+            <td>Zhaoyuan He, Yifan Yang, Lili Qiu, <span class="font-weight-bolder">Kyoungjun Park</span>, Yuqing Yang</td>
+            <td><a href="https://conferences.sigcomm.org/co-next/2024/#!/home" target="_blank">ACM CoNEXT 2024</a></td>
+            <td><a href="https://dl.acm.org/doi/10.1145/3649472" target="_blank">[paper]</a></td>
+            <td><a href="./assets/img/conext24.png" target="_blank"><img src="./assets/img/conext24.png" alt="Design" width=250px></a></td>
+          </tr>
 
-  <!-- Entry 2 -->
-  <tr>
-    <td class="font-weight-bolder">EVSO: Environment-aware Video Streaming Optimization of Power Consumption</td>
-    <td><span class="font-weight-bolder">Kyoungjun Park</span>, Myungchul Kim</td>
-    <td>
-      <a href="https://infocom2019.ieee-infocom.org/" target="_blank">IEEE INFOCOM 2019</a> <br> (acceptance ratio: 19.7%)
-    </td>
-    <td>
-      <a href="https://ieeexplore.ieee.org/abstract/document/8737392/" target="_blank">[paper]</a><br>
-      <a href="./assets/document/infocom_presentation.pdf" target="_blank">[slides]</a>
-      <a href="https://cs.kaist.ac.kr/board/view?bbs_id=news&bbs_sn=8761&menu=80" target="_blank">KAIST CS News</a>
-    </td>
-    <td>
-      <a href="./assets/document/evso.jpg" target="_blank">
-        <img src="./assets/document/evso.jpg" alt="EVSO"  width=200px>
-      </a>
-    </td>
-  </tr>
-  <!-- Entry 3 -->
-  <tr>
-    <td class="font-weight-bolder">Energy-efficient Mobile Charging for Wireless Power Transfer in Internet of Things Networks</td>
-    <td>Woongsoo Na, Junho Park, Cheol Lee, <span class="font-weight-bolder">Kyoungjun Park</span>, Joongheon Kim, Sungrae Cho</td>
-    <td>
-      <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488907" target="_blank">IEEE IoT Journal 2017</a>
-    </td>
-    <td>
-      <a href="https://ieeexplore.ieee.org/abstract/document/8103748/" target="_blank">[paper]</a>
-    </td>
-    <td>
-      <!--<img src="./assets/img/IoT_architecture.png" width="40%"> -->
-            <a href="./assets/img/simulator.jpg" target="_blank">
-        <img src="./assets/img/simulator.jpg" alt="Simulator" width=200px>
-      </a>
-    </td>
-  </tr>
+          <tr>
+            <td class="font-weight-bolder">NeuSaver: Neural Adaptive Power Consumption Optimization for Mobile Video Streaming</td>
+            <td><span class="font-weight-bolder">Kyoungjun Park</span>, Myungchul Kim, Laihyuk Park</td>
+            <td><a href="https://www.computer.org/csdl/journal/tm" target="_blank">IEEE TMC 2022</a></td>
+            <td><a href="https://ieeexplore.ieee.org/abstract/document/9847405/" target="_blank">[paper]</a></td>
+            <td><a href="./assets/document/NeuSaver_RL.jpg" target="_blank"><img src="./assets/document/NeuSaver_RL.jpg" alt="NeuSaver RL" width=250px></a></td>
+          </tr>
 
-</table>
-                  <!-- Conference Papers
-                  <h3 class="section-heading"><i class="fa fa-graduation-cap"></i>EDUCATION</h3>
-                -->
-              </div>
-            </div>
-          </div>
-        </section>
+          <tr>
+            <td class="font-weight-bolder">EVSO: Environment-aware Video Streaming Optimization of Power Consumption</td>
+            <td><span class="font-weight-bolder">Kyoungjun Park</span>, Myungchul Kim</td>
+            <td><a href="https://infocom2019.ieee-infocom.org/" target="_blank">IEEE INFOCOM 2019</a></td>
+            <td><a href="https://ieeexplore.ieee.org/abstract/document/8737392/" target="_blank">[paper]</a></td>
+            <td><a href="./assets/document/evso.jpg" target="_blank"><img src="./assets/document/evso.jpg" alt="EVSO" width=250px></a></td>
+          </tr>
 
+          <tr>
+            <td class="font-weight-bolder">Energy-efficient Mobile Charging for Wireless Power Transfer in Internet of Things Networks</td>
+            <td>Woongsoo Na, Junho Park, Cheol Lee, <span class="font-weight-bolder">Kyoungjun Park</span>, Joongheon Kim, Sungrae Cho</td>
+            <td><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488907" target="_blank">IEEE IoT Journal 2017</a></td>
+            <td><a href="https://ieeexplore.ieee.org/abstract/document/8103748/" target="_blank">[paper]</a></td>
+            <td><a href="./assets/img/simulator.jpg" target="_blank"><img src="./assets/img/simulator.jpg" alt="Simulator" width=250px></a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
         <!-- Education -->
         <section class="page-section" id="education">
           <div class="container">
@@ -281,7 +251,7 @@
         </section>
 
 
-        <!-- Internshiip -->
+<!-- Internshiip -->
 <section class="page-section" id="internship">
   <div class="container">
     <div class="row">
@@ -298,8 +268,8 @@
             <div class="font-weight-bolder" style="margin-top:40px;">Amazon</div>
             <div class="details">Seattle, US</div>
 
-            <div class="details">Topic: LLM and Gen AI in Amazon Rufus</div>
-            <div class="details">Will work with Bin Xu</div>
+            <div class="details">Topic: Lightweight Multimodal LLM for Product Matching</div>
+            <div class="details">with Pedro Herrero Vidal, You-Lin Chen, and Bin Xu</div>
             <div class="details">Fall 2025</div>
           </li>
 
@@ -313,7 +283,7 @@
             <div class="details">Shanghai, China</div>
 
             <div class="details">Topic: Researched Video Streaming in Low Earth Orbit</div>
-            <div class="details">Worked with Lili Qiu, Cheng Luo, Zhiyuan He</div>
+            <div class="details">with Cheng Luo, Zhiyuan He, and Lili Qiu</div>
             <div class="details">Summer 2022</div>
           </li>
         </ul>
