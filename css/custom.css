@@ -15,3 +15,10 @@
   width: 1em;
   margin-right: 0.5em;
 }
+
+/* Profile photo sizing */
+.profile img {
+  width: 260px;
+  max-width: 100%;
+  height: auto;
+}
