@@ -1,3 +1,16 @@
+/* styles.css ships `a { color: blue }` with a `#e6b301` hover (~1.9:1 on white,
+   far below WCAG AA). One accent colour for every link instead. #b64b00 is 5.3:1
+   on white; #bf5700 (official UT burnt orange) stays for non-link brand accents. */
+a,
+a:link {
+  color: #b64b00;
+}
+a:hover,
+a:focus {
+  color: #8a3900;
+  text-decoration: underline;
+}
+
 /* Custom bullets for research lists */
 .research-list {
   list-style: none;
@@ -16,9 +29,254 @@
   margin-right: 0.5em;
 }
 
+/* Publication list. Each entry spans the full container width so long titles and
+   author lists stay on one or two lines instead of wrapping inside narrow columns. */
+ul.pub-list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  text-align: left;
+}
+.pub {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+}
+.pub:last-child {
+  border-bottom: none;
+}
+/* Group headings (Conference Papers / Journal Articles / Preprints) */
+.pub-group .cv-group-label {
+  margin: 1.6rem 0 0.4rem;
+}
+ul.pub-list > li:first-child .cv-group-label {
+  margin-top: 0;
+}
+.pub-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  color: #1f2937;
+}
+.pub-authors {
+  margin-top: 4px;
+  color: #4b5563;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+.pub-authors .me {
+  font-weight: 700;
+  color: #1f2937;
+}
+.pub-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem 0.9rem;
+  margin-top: 6px;
+  font-size: 0.95em;
+}
+.pub-venue {
+  font-weight: 600;
+}
+.pub-links a + a {
+  margin-left: 0.4rem;
+}
+.pub-meta .venue-tag {
+  margin-top: 0;
+}
+
+/* Availability banner in the masthead */
+.availability-note {
+  margin-top: 10px;
+  color: #5c2a00;
+  background-color: #fff1df;
+  border: 1px solid #ffd9b3;
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: inline-block;
+  text-align: left;
+}
+
+/* Short bio under the masthead heading */
+.masthead-bio {
+  max-width: 44rem;
+  margin: 0.6rem auto 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Contact / profile link row */
+.profile-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem 1.6rem;
+}
+.profile-link {
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.profile-link i {
+  margin-right: 6px;
+}
+.profile-link:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .masthead-bio {
+    font-size: 1.05rem;
+  }
+  .profile-link {
+    font-size: 1.05rem;
+  }
+  /* styles.css sets a 4rem line-height on the 2.5rem name, which leaves ~0.75rem of
+     dead space above and below a single-line heading. 1.2 still clears the descenders
+     in "Kyoungjun" and lets margin-bottom be the real gap. */
+  header.masthead .masthead-heading {
+    line-height: 1.2;
+  }
+  /* styles.css sets line-height: 1rem on 1.7rem text, so the glyphs overflow their
+     own line box. Give it a real line-height and trim the margins by the same amount
+     so the masthead keeps its current overall spacing. */
+  header.masthead .masthead-subheading {
+    line-height: 1.3;
+    margin-top: 0.8em;
+    margin-bottom: 0.6em;
+  }
+}
+
+/* styles.css gives the masthead a 1rem name with a 0.3rem line-height on phones,
+   which collapses the heading. Restore a readable mobile scale. */
+@media (max-width: 767.98px) {
+  header.masthead .masthead-heading {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  header.masthead .masthead-subheading {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+}
+
 /* Profile photo sizing */
 .profile img {
   width: 260px;
   max-width: 100%;
   height: auto;
+}
+@media (max-width: 767.98px) {
+  .profile img {
+    width: 200px;
+  }
+}
+
+/* Venue metadata badges (acceptance rate, awards) */
+.venue-tag {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #f3f4f6;
+  color: #374151;
+  font-size: 0.82em;
+  font-weight: 600;
+}
+
+/* CV-style entry lists (education, experience, teaching, honors, service) */
+ul.cv-list {
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  padding-left: 0;
+}
+/* Keep these lists at body size; styles.css scales some legacy list classes oddly. */
+ul.cv-list > li {
+  font-size: 1rem;
+}
+.cv-entry {
+  padding: 0.7rem 0;
+}
+.cv-entry.bordered {
+  border-bottom: 1px solid #eee;
+}
+.cv-entry.bordered:last-child {
+  border-bottom: none;
+}
+.cv-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem 1.5rem;
+  flex-wrap: wrap;
+}
+.cv-title {
+  font-weight: 700;
+}
+.cv-date {
+  color: #6b7280;
+  font-size: 0.85em;
+  white-space: nowrap;
+}
+.cv-sub {
+  color: #4b5563;
+  font-size: 0.85em;
+  margin-top: 3px;
+}
+.cv-sub .honor-tag {
+  margin-left: 0.9rem;
+  font-size: 0.9em;
+}
+.cv-group-label {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.7em;
+  font-weight: 700;
+  color: #9ca3af;
+  margin: 1.4rem 0 0.2rem;
+}
+ul.cv-list > li:first-child .cv-group-label {
+  margin-top: 0;
+}
+.course-code {
+  display: inline-block;
+  min-width: 5.2em;
+  margin-right: 0.5em;
+  color: #b64b00;
+  font-weight: 700;
+}
+
+/* Sub-heading inside a page section (matches body text color, not accent) */
+.subsection-heading {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.subsection-note {
+  margin-bottom: 1.2rem;
+  font-size: 0.9em;
+  color: #6b7280;
+}
+
+/* Placeholder text for links/details not yet public */
+.tbd {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+/* Status badge for unpublished / under-review work, and honors */
+.pub-status,
+.honor-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #fff1df;
+  color: #b64b00;
+  border: 1px solid #ffd9b3;
+  font-size: 0.82em;
+  font-weight: 600;
+  white-space: nowrap;
 }
