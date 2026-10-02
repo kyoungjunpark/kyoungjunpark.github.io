@@ -85,6 +85,10 @@ ul.pub-list > li:first-child .cv-group-label {
 .pub-meta .venue-tag {
   margin-top: 0;
 }
+.pub-note {
+  color: #6b7280;
+  font-size: 0.85em;
+}
 
 /* Availability banner in the masthead */
 .availability-note {
